@@ -1,0 +1,5 @@
+ldl reg1 10
+ldl reg2 20
+add reg1 reg2
+st reg1 64
+hlt
