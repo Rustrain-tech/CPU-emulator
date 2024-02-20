@@ -158,12 +158,14 @@ impl Emulator {
                     let addr = address(self.ir);
                     if self.flag == 1 {
                         self.pc = addr as usize;
+                        continue;
                     }
                 }
 
                 JMP => {
                     let addr = address(self.ir);
                     self.pc = addr as usize;
+                    continue;
                 }
 
                 LD => {
